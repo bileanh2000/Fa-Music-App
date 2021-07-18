@@ -1,0 +1,12 @@
+<ul class="list-group" *ngFor="let track of tracks?.tracks">
+  <li class="list-group-item mb-3">
+    <div class="d-flex">
+      <img [src]="track?.album?.images[1].url" />
+      <div class="ml-4">
+        <div class="h3">{{ track?.name }}</div>
+        <div>{{ track?.type }}</div>
+        <div>{{ track?.album?.release_date }}</div>
+      </div>
+    </div>
+  </li>
+</ul>

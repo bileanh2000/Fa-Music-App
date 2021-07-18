@@ -1,0 +1,20 @@
+<div class="row mt-4">
+  <div class="col-md-3" *ngFor="let artist of artists?.artists?.items">
+    <a [routerLink]="['track', artist.id]">
+      <div class="artist mb-4">
+        <img [src]="artist?.images[0]?.url" />
+        <div class="play-icon"><i class="fas fa-play"></i></div>
+        <div class="mt-3 font-weight-bold h5">
+          {{ artist.name }}
+        </div>
+        <div>
+          {{ artist.popularity }}
+        </div>
+        <div>
+          {{ artist.genres }}
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,48 @@
+.artist {
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #171717;
+  position: relative;
+}
+
+.play-icon {
+  background-color: #1db954;
+  color: #f9f9f9;
+  display: inline-block;
+  border-radius: 100px;
+  position: absolute;
+  left: 180px;
+  top: 210px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.fa-play {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.artist:hover .play-icon {
+  visibility: visible;
+  top: 200px;
+  opacity: 1;
+  transition: 0.5s;
+  box-shadow: 0 0 10px 1px #171717;
+}
+.artist:hover {
+  background-color: #252525;
+  transition: 0.5s;
+  
+}
+/* .artist:hover::after{
+content: icon;
+} */
+
+img {
+  width: 100%;
+  border-radius: 15px;
+}
+a {
+  color: #f9f9f9;
+  text-decoration: none;
+}

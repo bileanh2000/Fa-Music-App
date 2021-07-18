@@ -1,0 +1,19 @@
+<div class="container mt-3">
+  <h3><span>FA</span> Music App <i class="fas fa-music"></i></h3>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="input-group rounded">
+      <input
+        type="text"
+        class="form-control rounded"
+        placeholder="Search"
+        aria-label="Search"
+        aria-describedby="search-addon"
+        formControlName="name"
+      />
+      <button class="btn btn-success" [disabled]="!form.valid">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+  </form>
+  <router-outlet></router-outlet>
+</div>
