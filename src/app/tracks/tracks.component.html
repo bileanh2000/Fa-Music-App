@@ -6,6 +6,10 @@
         <div class="h3">{{ track?.name }}</div>
         <div>{{ track?.type }}</div>
         <div>{{ track?.album?.release_date }}</div>
+        <audio controls class="mt-5">
+          <source [src] = "track.preview_url" type="audio/ogg">
+          <source [src] = "track.preview_url" type="audio/mpeg">
+        </audio>
       </div>
     </div>
   </li>
